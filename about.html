@@ -1,0 +1,118 @@
+<!-- ********************************************************************
+/* Student Name : Amandeep Kaur                                     */
+/*                                                                  */
+/********************************************************************-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+ 
+ <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+ <link rel="stylesheet" type="text/css" href="css/home.css">
+  
+</head>
+<body>
+    <header>
+        
+        <h1 id="headerlogo">Conestoga College</h1>
+        <div class="login">
+          <a href="signup.html">
+            <h5>Login | Sign Up</h5>
+          </a>
+        </div>
+        
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Registration</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+            
+
+        </ul>
+    </nav>
+    <main id="about">
+        
+       <div>
+
+        <div id ="tabs">  
+            <ul>
+                <li><a href="#tabs-1">About Me</a></li>
+                <li><a href="#tabs-2">About Website</a></li>
+               
+            </ul>   
+              <div id="tabs-1">      
+               
+               
+            
+            <p>
+                We,  Hanish Kavalanchery Haridas, Sibin George, Ravinder Singh and Amandeep Kaur, and are the students of Conestoga College, Kithcener. We are the memners of group 7 of Java Programming subject and we have created this web application. This is our final group project for the term. 
+                <br>
+            </p>
+        </div>
+    
+        
+       <div id="tabs-2">        
+               
+                            
+        <p>This web application allows a student or teacher to register with registration page. It performs various Javascropt, jquery and css function to perform the registration. It alse show a gallery of pictures of the college to provide a glimpse to the user. When a user clicks a thumbnail, a larger picuter is displayed.
+            </p>
+        </div>
+    </div>
+</div>
+
+      
+</main>
+<br><br><br><br><br><br>
+<footer>
+    <small>&copy; "Ravinder Singh/8915738" 2023</small>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready( () =>
+            $("#tabs").tabs()
+        )
+
+</script>
+<footer id="aboutFooter">
+        <div class="footeritem">
+            <h4>Quick Links</h4>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Registration</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="footeritem">
+            <h4>Address</h4>
+                    <ul>
+                        <li>Conestoga College,</li>
+                        <li>Doon Campus,</li>
+                        <li>Kitchener,</li>
+                    </ul>
+                
+        </div>
+        <div class="footeritem">
+             <h4>Contact Information</h4>
+                <ul>
+                    <li>Group 7</li>
+                    <li>Phone: +1 (548) 577-8444</li>
+                    <li>Address: Conestoga Campus, Kitchener</li>
+                </ul>
+
+        </div>
+        
+        <p id="copyrightabout">Copyright &copy; 2023 Group 7</p>
+    </footer>
+</body>
+</html>

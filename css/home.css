@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary_color:#190482;
+}
+
+body
+{
+    background-color: #FDF4F5;
+}
+
+
+header, footer 
+{
+    background-color: var(--primary_color);
+}
+header
+{
+    width:100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    
+}
+h2,a,h3 
+{
+    color:var(--primary_color);
+}
+header h1 
+{
+    text-transform: uppercase;
+    font-size: 4rem;
+  color:#fff;
+}
+
+h1,nav,footer
+{
+font-family:'Poppins', serif; 
+}
+
+body, h2, h3, span  
+{ 
+font-family: 'Roboto' "Gabriola",sans-serif; 
+}
+
+nav
+{
+    width:100%;
+    text-align: left;
+    background-color: rgba(0,0,0,0.2);
+    
+}
+nav ul li 
+{
+    list-style: none;
+    display: inline-block;
+    padding: 15px 0
+}
+nav ul li a 
+{
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+   padding:0 60px ;
+
+    
+}
+nav ul li:hover 
+{
+    background-color:var(--primary_color);
+
+}
+nav ul li:hover a
+{
+color: #fff;
+text-shadow:0px 0px 2px var(--primary_color);
+font-weight: 1000;
+}
+
+.login 
+{
+    position: absolute;
+    right:10%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    color: var(--primary_color);
+    font-weight: 1000;
+    border-radius: 25px;
+    text-transform: uppercase;
+    }
+    .login a 
+    {
+        text-decoration: none;
+    }
+
+    .login:hover
+    {
+      box-shadow: 0 0 10px #fff;  
+    }
+
+.login:hover h5
+{
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+
+}
+
+main h1 
+{
+    text-transform: uppercase;
+    color: var(--primary_color);
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+footer 
+{
+padding: 10px 10%;
+color:#fff;
+width: 100%;
+font-size: smaller;
+display: flex;
+flex-wrap: wrap;
+
+}
+footer .footeritem
+{
+  width: 33%;
+  padding-left: 5%;
+}
+footer nav ul 
+{
+  text-align: left;   
+}
+
+footer nav ul li
+{ 
+
+display: block;
+padding: 3px;
+ text-align: left;
+
+
+}
+footer nav 
+{
+   background-color:var(--primary_color); 
+}
+footer nav ul li a 
+{
+    color:#fff;
+    font-size: .9rem;
+    text-align: left;
+    padding: 0;
+
+}
+
+
+
+footer nav ul li:hover a
+{
+    color:#fff;
+    text-shadow: 0px 0px 2px #fff;
+}
+footer .footeritem:nth-child(1),footer .footeritem:nth-child(2)
+{
+    border-right: 4px solid white;
+}
+#copyright
+{ 
+font-family: sans-serif;
+font-style: italic;
+width: 100%;
+text-align: center;
+margin-top: 10px;
+}
+footer h4 
+{
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+footer ul li 
+{
+    list-style: none;
+    font-size: 1rem;
+    padding:2px;
+    
+}
+#membershipForm 
+{
+
+margin-left: 15%;
+margin-bottom: 30px;
+border: 2px solid var(--primary_color); 
+width: 70%;
+padding: 10px;
+background-color: #fff;
+box-shadow: 0px 0px 10px var(--primary_color);
+
+}
+#membershipForm fieldset div
+        {
+        
+          margin: 0 auto;
+          box-shadow: 0px 0px 2px #bbb;
+          padding: 10px;
+          display: grid;
+          grid-template-columns: 160px 60% auto;
+          grid-column-gap: 15px;
+
+        }
+ #membershipForm fieldset #radio 
+ {
+    display: grid;
+    grid-template-columns: 160px 20px 100px 20px 100px;
+ }  
+ label 
+ {
+    font-size: 1.2rem;
+ }
+
+ 
+input 
+ {
+  
+    font-size: 1.1rem;
+    padding: 8px;
+}
+#buttons input 
+{
+    width: 7em;
+    margin-right: 0;
+}
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+   
+}
+legend {
+    color: var(--primary_color); 
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: .5em;
+
+}
+span {
+    color: red;
+    font-size: 87.5%;
+    margin-left: .5em;
+}     
+
+#membershipForm #btn 
+{
+  display: flex;
+  gap:20px;
+justify-content: center;
+  
+   
+}
+
+#membershipForm #btn input 
+{
+       width: 160px;
+       background-color:var(--primary_color); 
+       color:#fff;
+       font-size: 1.2rem;
+       text-transform: uppercase;
+       font-weight: 500;
+       border-radius: 10px;
+
+}
+#membershipForm #btn input:hover
+{
+    background-color: #fff;
+    color:var(--primary_color); 
+    box-shadow: 1px solid var(--primary_color); 
+    box-shadow: 0 0 5px var(--primary_color); 
+
+}
+#password 
+{
+    position: relative;
+}
+#password::before {
+  content: " - Remember this";
+  background-color: yellow;
+  color: red;
+  position: absolute;
+  top:0;
+  left:0;
+  font-weight: bold;
+}
+input[type=text]:focus,input[type=password]:focus,textarea:focus
+{
+    background-color: #EDE4FF;
+}
+#pwdcheck li
+{
+    color:red;
+    margin-left: 20px;
+}
+
+
+
+.imgSlider 
+{
+    text-align: center;
+    font-family: 'Roboto' "Gabriola",sans-serif; 
+    width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid var(--primary_color); 
+    box-shadow: 0 0 10px var(--primary_color);
+    margin-top: 20px;
+}
+.imgSlider h2
+{
+    background:rgba(0,0,0,0.2);
+    margin: 0;
+    padding: 5px 0 5px 10px;
+    border:2px solid var(--primary_color); 
+    color: var(--primary_color);
+     font-size: 2rem;
+    text-transform: uppercase;
+}
+.imgSlider p 
+{
+     font-size: 1.8rem;
+     color: var(--primary_color);
+     padding: 15px;
+     text-transform: uppercase;
+}
+.light_box 
+{
+    text-align: center;
+     font-family: 'Roboto' "Gabriola",sans-serif; 
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px solid var(--primary_color); 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px var(--primary_color);
+}
+.light_box h2 
+{
+    background:rgba(0,0,0,0.2);
+    margin: 0;
+    padding: 5px;
+    border:2px solid var(--primary_color); 
+    color: var(--primary_color);
+    font-size: 2rem;
+    text-transform: uppercase;
+   
+   
+
+}
+.light_box p 
+{
+     font-size: 1.8rem;
+     color: var(--primary_color);
+     padding: 15px;
+     text-transform: uppercase;
+}
+#tabs 
+        {
+           
+            padding: 25px;
+            width: 75%;
+            margin: auto;
+            text-align: left;
+
+        }
+        #tabs p 
+        {
+            font-size: 1.2rem;
+            color: var(--primary_color);
+        }
+
+     #aboutFooter 
+     {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+     }  
+     #copyrightabout 
+     {
+        font-family: sans-serif;
+        font-style: italic;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+     } 
+     #contacth2 
+     {
+        margin-top: 10px;
+        text-align: center;
+        text-transform: uppercase;
+     }

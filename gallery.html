@@ -1,0 +1,161 @@
+<!-- ********************************************************************
+/* Student Name : Ravinder Singh                                    */
+/* Student ID   : 8915738                                           */
+/********************************************************************-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/lightbox.css">
+</head>
+
+<body>
+    <header>
+        
+        <h1 id="headerlogo">Conestoga College</h1>
+        <div class="login">
+          <a href="signup.html">
+            <h5>Login | Sign Up</h5>
+          </a>
+        </div>
+
+        
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Registration</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+            
+
+        </ul>
+    </nav>
+    <section>
+        <div class="imgSlider">
+        <h2>Images Gallery</h2>
+        <p>Conestoga College, Kitchener, Ontario</p>
+        <ul id="slider">
+         
+            <li><img src="Images/welcome.jpg" alt="welcome Centre" title="welcome Centre"></li>
+            <li><img src="Images/recreation.jpg" alt="Recreation Centre" title="Recreation Centre"></li>
+            <li><img src="Images/sport.jpg" alt="Indoor Sports Room" title="Indoor Sports Room"></li>
+            <li><img src="Images/nature.jpg" alt="Close To Nature" title="Close To Nature"></li>
+            <li><img src="Images/residence.jpg" alt="Students Residence" title="Students Residence"></li>
+            <li><img src="Images/room.jpg" alt="Study Area" title="Study Area"></li>
+            <li><img src="Images/tech.jpg" alt="Tech Desk" title="Tech Desk"></li>
+            <li><img src="Images/gym.jpg" alt="Indoor Gym" title="Indoor Gym"></li>
+            <li><img src="Images/corridor.jpg" alt="College Corridor" title="College Corridor"></li>
+        </ul>
+    </div>
+
+<!-- **************Light Box Jquery widget************************ -->
+    <div class="light_box">
+     <h2>Conestoga At A Glance</h2>
+        <p>Click on the Thumbnails to view the larger Picture</p>
+
+         <a href="images/welcome.jpg" data-lightbox="vecta" data-title="Welcome Centre ">
+        <img src="images/welcomeThumb.jpg" alt="Welcome Centre ">
+        </a>
+       
+        <a href="images/class.jpg" data-lightbox="vecta" data-title="Class Room">
+        <img src="images/classThumb.jpg" alt="Class Room">
+        </a>
+        <a href="images/corridor.jpg" data-lightbox="vecta" data-title="College Corridor ">
+        <img src="images/corridorThumb.jpg" alt="College Corridor">
+        </a>
+        <a href="images/nature.jpg" data-lightbox="vecta" data-title="Close to Nature">
+        <img src="images/natureThumb.jpg" alt="Close to Nature">
+        </a>
+        <a href="images/recreation.jpg" data-lightbox="vecta" data-title="Recreation Centre">
+        <img src="images/recreationThumb.jpg" alt="Recreation Centre">
+        </a>
+        <a href="images/residence.jpg" data-lightbox="vecta" title="Students Residence">
+        <img src="images/residenceThumb.jpg" alt="Students Residence">
+        </a>
+        <a href="images/room.jpg" data-lightbox="vecta" data-title="Class Room">
+        <img src="images/roomThumb.jpg" alt="Class Room">
+        </a>
+
+        <a href="images/smart.jpg" data-lightbox="vecta" data-title="Samrt Room ">
+        <img src="images/smartThumb.jpg" alt="Samrt Room ">
+        </a>
+         <a href="images/sport.jpg" data-lightbox="vecta" data-title="Sports Facilities">
+        <img src="images/sportThumb.jpg" alt="Sports Facilities">
+        </a>
+
+         <a href="images/stadium.jpg" data-lightbox="vecta" data-title="Indoor Stadium ">
+        <img src="images/stadiumThumb.jpg" alt="Indoor Stadium">
+        </a>
+       
+        <a href="images/study.jpg" data-lightbox="vecta" data-title="Study Area">
+        <img src="images/studyThumb.jpg" alt="Study Area">
+        </a>
+         <a href="images/tech.jpg" data-lightbox="vecta" data-title="Technical Desk ">
+        <img src="images/techThumb.jpg" alt="Technical Desk">
+        </a>
+
+    </div>
+      
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxSlider.min.js"></script>
+
+    <script src="js/lightbox.min.js"></script>
+<!-- **************Call of bxSlider function************************ -->
+    <script>
+        $(document).ready( () => 
+            $("#slider").bxSlider({
+              auto: true,
+              autoControls: true,
+              captions: true,
+              minSlides: 2,
+              maxSlides: 2,
+              slideWidth: 250,
+              slideMargin: 10
+            })
+        )
+    </script>
+
+<footer>
+        <div class="footeritem">
+            <h4>Quick Links</h4>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Registration</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="footeritem">
+            <h4>Address</h4>
+                    <ul>
+                        <li>Conestoga College,</li>
+                        <li>Doon Campus,</li>
+                        <li>Kitchener,</li>
+                    </ul>
+                
+        </div>
+        <div class="footeritem">
+             <h4>Contact Information</h4>
+                <ul>
+                    <li>Group 7</li>
+                    <li>Phone: +1 (548) 577-8444</li>
+                    <li>Address: Conestoga Campus, Kitchener</li>
+                </ul>
+
+        </div>
+        
+        <p id="copyright">Copyright &copy; 2023 Group 7</p>
+    </footer>
+    </body>
+</html>

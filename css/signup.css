@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary_color:#190482;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    place-content: center;
+    min-height: 100vh;
+    background: rgba(12, 12, 200, 0.756);
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+header {
+    padding-top: 2rem;
+}
+
+main {
+    display: grid;
+    place-content: center;
+}
+
+.wrapper {
+    background: hsl(0 0% 100% / 0.4);
+    display: grid;
+    border-radius: 1.5rem;
+}
+
+.split {
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    display: grid;
+    gap: 1rem;
+    place-content: center;
+    text-align: start;
+    grid-template-rows: 1fr auto;
+}
+
+@media (min-width: 45rem) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.bg-blue {
+    background:  var(--primary_color);
+}
+
+.bg-grey {
+    background: grey;
+}
+
+.bg-blur {
+    background: hsl(0 0% 100% / 0.2);
+}
+h1{
+    font-size: 4rem;
+    color:#fff;
+    text-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+form {
+    display: grid;
+    gap: 0.5rem;
+}
+
+
+input, button {
+    border-radius: 14px;
+    border: none;
+    padding: 0.3rem 1rem;
+}
+
+
+button {
+    background: rgba(34, 33, 33, 0.949);
+    color: #eee;
+    max-width: 10em;
+    padding-block: 0.5rem;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background: black;
+    color: #eee;
+    max-width: 10em;
+    cursor: pointer;
+}
+
+button:hover {
+    background: black;
+}
+
+/* input:not(:focus):invalid {
+    border: 2px solid crimson;
+} */
+
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid crimson;
+  }
+
+
+.error {
+    color: crimson;
+}
+
+.error-border {
+    border: 2px solid crimson;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+footer {
+    color: #eee;
+}
+
+#error-modal {
+    position: absolute;
+    top: 150px;
+    left: 37%;
+    padding: 0.5rem 1.2rem;
+    background: red;
+    max-width: fit-content;
+    border: 2px solid black;
+}
+#home 
+{
+    position: absolute;
+    left:20px;
+    top:20px;
+    width: 100px;
+    height: 40px;
+    background: #fff;
+    line-height: 35px;
+    border-radius: 20px;
+
+}
+#home a 
+{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--primary_color);;;
+}
+#home:hover 
+{
+    box-shadow: 0 0 5px #fff;
+}

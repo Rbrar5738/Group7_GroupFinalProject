@@ -1,0 +1,91 @@
+<!-- ********************************************************************
+/* Student Name : Sibin George                                      */
+/*                                                                 */
+/********************************************************************-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link href="css/contact.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./js/contact.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="headerlogo">Conestoga College</h1>
+       <div class="login">
+          <a href="signup.html">
+            <h5>Login | Sign Up</h5>
+          </a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Registration</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 id="contacth2">Provide your Contact Information</h2>
+
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Please Enter the Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Please Enter the Email">
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- jQuery UI Dialog -->
+    <div id="confirmationDialog" title="Email Sending Confirmation" style="display: none;">
+        <p>Do you want to send the email?</p>
+    </div>
+
+
+
+<footer>
+    <div class="footeritem">
+        <h4>Quick Links</h4>
+        <nav>
+            <ul>
+                <li><a href="home.html">Registration</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="footeritem">
+        <h4>Address</h4>
+        <ul>
+            <li>Conestoga College,</li>
+            <li>Doon Campus,</li>
+            <li>Kitchener,</li>
+        </ul>
+    </div>
+    <div class="footeritem">
+        <h4>Contact Information</h4>
+        <ul>
+            <li>Group 7</li>
+            <li>Phone: +1 (548) 577-8444</li>
+            <li>Address: Conestoga Campus, Kitchener</li>
+        </ul>
+    </div>
+    <p id="copyright">Copyright &copy; 2023 Group 7</p>
+</footer>
+</body>
+</html>
